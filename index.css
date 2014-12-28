@@ -1,16 +1,57 @@
 body {
   background-color: #defdef;
-  font-family: "MS Pゴシック" serif;
+  font-family: 'Lucida Grande',
+  'Hiragino Kaku Gothic ProN', 
+  Meiryo, sans-serif;
+}
+
+section {
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+a {
+  color: #1111cc;
+}
+
+#epigraph {
+  font-size: 3em;
+  color: #555555;
+  font-family: Lobster, cursive;
 }
 
 h1 {
   text-align: center;
   font-weight: bold;
-  font-family: "MS P明朝" sans-serif;
+  font-size: 4em;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Vollkorn, serif;
 }
 
 h2 {
   text-decoration: underline;
+  margin-top: 2em;
+}
+
+h2:before {
+  font-family: "Times New Roman", serif;
+  font-size: xx-large;
+  content: "א ";
+}
+
+ul {
+  list-style: none;
+  margin-left: 2em;
+}
+li:before {
+  font-family: "Times New Roman", serif;
+  font-size: small;
+  font-weight: bold;
+  margin-left: -2em;
+  unicode-bidi: bidi-override;
+  direction: ltr;
+  content: "ב ";
 }
 
 table {
@@ -33,9 +74,17 @@ th {
   border-bottom: 1px solid #ccc;
 }
 
+tr {
+  background-color: #fafafa;
+}
+
+tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
 td {
   padding: 4px;
-  background-color: #fafafa;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+
